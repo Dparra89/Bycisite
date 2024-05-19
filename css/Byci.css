@@ -173,7 +173,7 @@ div .icon-caracter{
 
 div .tittle-section{
     display: flex;
-    margin: 0;
+    /* margin: 0; */
 }
 
 .tittle-section h2{
@@ -241,10 +241,87 @@ div .tittle-section{
 
 }
 
+/* --------Contact-------- */
+/* Abandoné el centrado, no lo pude hacer */
+form .formulario{
+    align-items: center;
+}
+
+.contacto{
+    display: flex;
+    justify-content: center;
+
+}
+.contacto h3{
+    text-align: center;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    color: #676767;
+}
 
 
 
+.contacto div{
+    width: 100%;
+    padding: 0 20%;
+}
 
+.datos p{
+    font-size: 14px;
+}
+
+
+.datos ul li{
+    font-size: 12px;
+}
+
+.formulario p{
+    display: flex; 
+    width: 500px; 
+
+    
+}
+
+.formulario p label{
+    min-width: 100px;
+    font-family: "Work Sans", sans-serif;
+    align-content: center;
+}
+
+.formulario p input,
+.formulario p textarea{
+    width: 100%;
+    background-color:#f9f9f9;
+    border: 2px solid #000000ee;
+    border-radius: 2px;
+    padding: 6px;
+    font-size: 14px;
+    height: 40px;
+    font-family: "Work Sans", sans-serif;  
+}
+
+.formulario p textarea{
+    resize: none;
+    height: 150px;
+}
+
+.formulario input[type="submit"]{
+    background-color: #000000;
+    width: 200px;
+    height: 56px;
+    padding: 8px;
+    box-shadow: 0 0 10px rgba(93, 93, 93, 0.3);
+    color:white;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    margin: 42px 0;
+    font-family: "Work Sans", sans-serif;  
+}
+
+.formulario input[type="submit"]:hover{
+    background-color: rgb(42, 42, 42);
+}
 
 /* --------Footer-------- */
 
