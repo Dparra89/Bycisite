@@ -1,6 +1,7 @@
 /* font-family: "Work Sans", sans-serif; */
 /* font-family: "Sora", sans-serif; */
 
+
 header {
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -22,7 +23,16 @@ nav .menu{
     display: inline-flex;
     justify-content: space-between;
     padding: 0 20px;
-    gap: 20px;
+    gap: 32px;
+}
+
+nav ul li a:hover{
+    color: rgb(89, 89, 89);
+}
+
+nav ul li a.activo{
+   color: #000000;
+   border-bottom: 2px solid rgb(179, 230, 184); 
 }
 
 .menu li a{
@@ -31,34 +41,253 @@ nav .menu{
     font-family: "Work Sans", sans-serif;
     color: black;
     
-    /* padding: 0 10px; */
-}
-
-.bannerhome{
-    background-image: url(/Users/china/Desktop/Byciapp/img/home_banner.png);
-    width: 100%;
-    background-position: center;
 }
 
 
-
-/* .bannerhome img{
+.bannerhome img{
     width: 100%;
-    height: auto;
-    /* position: relative; */
+    height: fit-content;
    
-}
+} 
 
-.bannerhome h2{
-    color: rgb(255, 255, 255);
-    font-family: "Sora", sans-serif;
-    font-size: 1.5rem;
-    position: absolute;
-    font-weight: 400;
-    justify-content: center;
-    /* top: 25%;
-    left: 25%; */
-    text-align: center;
-    text-shadow: 0 0 8px rgb(0, 0, 0);
+
+/* .bannerhome h2{
+  position: relative;
+  width: 100%;
+  margin: 20%;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  color: white;
+  text-shadow: 2px 2px 6px #181818;
+
 } */
 
+
+
+/* --------Section Intro-------- */
+
+.section-intro{
+    margin: 0;
+    display: inline-flex;
+    height: 600px;
+
+}
+
+div .intro-text{
+   width: 50%;
+   box-sizing: border-box;
+   padding: 10%;
+   align-content: center;
+}
+
+.intro-text h3{
+    font-family: "Work Sans", sans-serif;
+}
+
+.intro-text p{
+    font-family: "Work Sans", sans-serif;
+    font-size: 14px;
+}
+
+
+div .intro-img{
+    box-sizing: border-box;
+    width: 50%;
+    background-color: rgb(232, 251, 234);
+    padding: 5%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:16px
+
+}
+.img-bigtext{
+    width: 50%;
+    height: 400px;
+}
+
+.intro-img img{
+    width: 100;
+    height: fit-content;
+    border-radius: 30px;   
+}
+
+.intro-img p{
+    font-family: "Sora", sans-serif;
+    font-size: 50px;
+    width: auto;
+}
+
+/* --------Section Caracteristics-------- */
+
+.caracter{
+    /* display: flex; */
+    background-color: rgb(0, 0, 0);
+    align-content: center;
+    height: 500px;
+
+}
+
+.caracter h3{
+    text-align: center;
+    padding:  32px 0 0;
+    margin: 0;
+    color: white;
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+}
+
+.box-caracter{
+    display: flex;
+    width: 100%;
+    padding: 56px 10%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-content: center;
+    
+}
+
+div .icon-caracter{
+    width: 20%;
+    box-sizing: border-box;
+    align-content: center;
+    box-sizing: border-box;
+    text-align: center;} /* solo esta opción alineó la img + texto
+ */
+.icon-caracter img{
+    align-items: center;
+    padding: auto;
+}
+
+
+.icon-caracter h5{
+    font-family: "Work Sans", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 400;   
+    /* text-align: center;  */
+}
+
+/* -------- Page Cities-------- */
+
+div .tittle-section{
+    display: flex;
+    margin: 0;
+}
+
+.tittle-section h2{
+    font-family: "Work Sans", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+    margin: 72px;
+}
+
+.buenosaires{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    height: 400px;
+    padding: 0 80px;
+    margin-bottom: 64px;
+    justify-content: center;
+
+}
+
+.city{
+    width: 600px;
+    background-color: rgb(223, 245, 229);
+    padding: 8%;
+    box-sizing: border-box;
+
+}
+
+.city h5{
+    font-family: "Sora", sans-serif;
+    font-size: 400;
+}
+
+.city p{
+    font-family: "Work Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.city-text{
+
+    box-sizing: border-box;
+    /* position: relative; */
+    margin: 0%;
+}
+
+ .city-text img{
+    margin: 0;
+    height: 100%;
+    /* position: absolute; */
+    
+ }
+
+
+ .barcelona{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    height: 400px;
+    padding: 0 80px;
+    margin-bottom: 120px;
+    justify-content: center;
+
+}
+
+
+
+
+
+
+/* --------Footer-------- */
+
+footer{
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(202, 176, 202);
+    margin: 0;
+    padding: 64px 20%;
+    width: 100%;
+
+    box-sizing: border-box;
+    text-align: center;
+    font-family: "Work Sans", sans-serif;
+}
+
+.footer-content ul{
+    list-style: none;
+    display: inline-flex;
+    justify-content: center;
+
+}
+
+.social{
+    text-decoration: none;
+    padding: 0;
+    gap: 16px;
+
+}
+
+.social li a{
+    color: rgb(47, 47, 47);
+}
+
+.footer-content p{
+    color: rgb(47, 47, 47);
+}
+
+.footer-content h4{
+    font-weight: 400;
+    color: black;
+}
+
+.social li a :hover{
+    color: rgb(96, 63, 115);
+}
